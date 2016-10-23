@@ -7,21 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB120B6F2868D4AD3F43B2A /* Pods_Watson_Cardiology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AA520957975978F9CAA165 /* Pods_Watson_Cardiology.framework */; };
+		F82759D81DBAA60700338A6C /* DepartmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82759D61DBAA60700338A6C /* DepartmentCollectionViewCell.swift */; };
+		F82759D91DBAA60700338A6C /* DeparmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82759D71DBAA60700338A6C /* DeparmentCollectionViewCell.xib */; };
+		F82759E51DBAAF4500338A6C /* ManagementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82759E11DBAAF4500338A6C /* ManagementDetailViewController.swift */; };
+		F82759E71DBAB01C00338A6C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82759E61DBAB01C00338A6C /* Utils.swift */; };
+		F82759F91DBAB50E00338A6C /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82759F81DBAB50E00338A6C /* Management.swift */; };
 		F82B936D1DBA4E0A002F0C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B936C1DBA4E0A002F0C51 /* AppDelegate.swift */; };
-		F82B936F1DBA4E0A002F0C51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B936E1DBA4E0A002F0C51 /* ViewController.swift */; };
+		F82B936F1DBA4E0A002F0C51 /* DepartmentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B936E1DBA4E0A002F0C51 /* DepartmentOptionsViewController.swift */; };
 		F82B93721DBA4E0A002F0C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82B93701DBA4E0A002F0C51 /* Main.storyboard */; };
 		F82B93741DBA4E0A002F0C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82B93731DBA4E0A002F0C51 /* Assets.xcassets */; };
 		F82B93771DBA4E0A002F0C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82B93751DBA4E0A002F0C51 /* LaunchScreen.storyboard */; };
+		F82B937F1DBA4F76002F0C51 /* IBM_Watson_Logo_Animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = F82B937E1DBA4F76002F0C51 /* IBM_Watson_Logo_Animation.gif */; };
+		F82B93811DBA5552002F0C51 /* WatsonCardiology.plist in Resources */ = {isa = PBXBuildFile; fileRef = F82B93801DBA5552002F0C51 /* WatsonCardiology.plist */; };
+		F863F3251DBA5BFE00D057BA /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863F3241DBA5BFE00D057BA /* MessagesViewController.swift */; };
+		F863F3271DBA61D600D057BA /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863F3261DBA61D600D057BA /* MessagesViewModel.swift */; };
+		F863F3291DBA628800D057BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863F3281DBA628800D057BA /* User.swift */; };
+		F863F32C1DBA659700D057BA /* DecisionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F863F32A1DBA659700D057BA /* DecisionsView.xib */; };
+		F863F32D1DBA659700D057BA /* DecisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863F32B1DBA659700D057BA /* DecisionsView.swift */; };
+		F863F3301DBA6F1300D057BA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421A1DBA5A9D00A811BE /* Alamofire.framework */; };
+		F863F3311DBA6F1300D057BA /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2421A1DBA5A9D00A811BE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3321DBA6F1300D057BA /* AlchemyDataNewsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421B1DBA5A9D00A811BE /* AlchemyDataNewsV1.framework */; };
+		F863F3331DBA6F1300D057BA /* AlchemyDataNewsV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2421B1DBA5A9D00A811BE /* AlchemyDataNewsV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3341DBA6F1300D057BA /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421C1DBA5A9D00A811BE /* AlchemyLanguageV1.framework */; };
+		F863F3351DBA6F1300D057BA /* AlchemyLanguageV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2421C1DBA5A9D00A811BE /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3361DBA6F1300D057BA /* AlchemyVisionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421D1DBA5A9D00A811BE /* AlchemyVisionV1.framework */; };
+		F863F3371DBA6F1300D057BA /* AlchemyVisionV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2421D1DBA5A9D00A811BE /* AlchemyVisionV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3381DBA6F1300D057BA /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421E1DBA5A9D00A811BE /* ConversationV1.framework */; };
+		F863F3391DBA6F1300D057BA /* ConversationV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2421E1DBA5A9D00A811BE /* ConversationV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F33A1DBA6F1300D057BA /* ConversationV1Experimental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421F1DBA5A9D00A811BE /* ConversationV1Experimental.framework */; };
+		F863F33B1DBA6F1300D057BA /* ConversationV1Experimental.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2421F1DBA5A9D00A811BE /* ConversationV1Experimental.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F33C1DBA6F1300D057BA /* DialogV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242201DBA5A9D00A811BE /* DialogV1.framework */; };
+		F863F33D1DBA6F1300D057BA /* DialogV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242201DBA5A9D00A811BE /* DialogV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F33E1DBA6F1300D057BA /* DocumentConversionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242211DBA5A9D00A811BE /* DocumentConversionV1.framework */; };
+		F863F33F1DBA6F1300D057BA /* DocumentConversionV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242211DBA5A9D00A811BE /* DocumentConversionV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3401DBA6F1300D057BA /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242221DBA5A9D00A811BE /* Freddy.framework */; };
+		F863F3411DBA6F1300D057BA /* Freddy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242221DBA5A9D00A811BE /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3421DBA6F1300D057BA /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242231DBA5A9D00A811BE /* LanguageTranslatorV2.framework */; };
+		F863F3431DBA6F1300D057BA /* LanguageTranslatorV2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242231DBA5A9D00A811BE /* LanguageTranslatorV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3441DBA6F1300D057BA /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242241DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework */; };
+		F863F3451DBA6F1300D057BA /* NaturalLanguageClassifierV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242241DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3461DBA6F1300D057BA /* PersonalityInsightsV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242251DBA5A9D00A811BE /* PersonalityInsightsV2.framework */; };
+		F863F3471DBA6F1300D057BA /* PersonalityInsightsV2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242251DBA5A9D00A811BE /* PersonalityInsightsV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3481DBA6F1300D057BA /* RelationshipExtractionV1Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242261DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework */; };
+		F863F3491DBA6F1300D057BA /* RelationshipExtractionV1Beta.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242261DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F34A1DBA6F1300D057BA /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242271DBA5A9D00A811BE /* RestKit.framework */; };
+		F863F34B1DBA6F1300D057BA /* RestKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242271DBA5A9D00A811BE /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F34C1DBA6F1300D057BA /* RetrieveAndRankV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242281DBA5A9D00A811BE /* RetrieveAndRankV1.framework */; };
+		F863F34D1DBA6F1300D057BA /* RetrieveAndRankV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242281DBA5A9D00A811BE /* RetrieveAndRankV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F34E1DBA6F1300D057BA /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242291DBA5A9D00A811BE /* SpeechToTextV1.framework */; };
+		F863F34F1DBA6F1300D057BA /* SpeechToTextV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A242291DBA5A9D00A811BE /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3501DBA6F1300D057BA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422A1DBA5A9D00A811BE /* Starscream.framework */; };
+		F863F3511DBA6F1300D057BA /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2422A1DBA5A9D00A811BE /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3521DBA6F1300D057BA /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422B1DBA5A9D00A811BE /* TextToSpeechV1.framework */; };
+		F863F3531DBA6F1300D057BA /* TextToSpeechV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2422B1DBA5A9D00A811BE /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3541DBA6F1300D057BA /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422C1DBA5A9D00A811BE /* ToneAnalyzerV3.framework */; };
+		F863F3551DBA6F1300D057BA /* ToneAnalyzerV3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2422C1DBA5A9D00A811BE /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3561DBA6F1300D057BA /* TradeoffAnalyticsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422D1DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework */; };
+		F863F3571DBA6F1300D057BA /* TradeoffAnalyticsV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2422D1DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F3581DBA6F1300D057BA /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422E1DBA5A9D00A811BE /* VisualRecognitionV3.framework */; };
+		F863F3591DBA6F1300D057BA /* VisualRecognitionV3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8A2422E1DBA5A9D00A811BE /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F863F35A1DBA6F1300D057BA /* Pods_Watson_Cardiology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AA520957975978F9CAA165 /* Pods_Watson_Cardiology.framework */; };
+		F863F35B1DBA6F1300D057BA /* Pods_Watson_Cardiology.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67AA520957975978F9CAA165 /* Pods_Watson_Cardiology.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8A2422F1DBA5A9D00A811BE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421A1DBA5A9D00A811BE /* Alamofire.framework */; };
+		F8A242301DBA5A9D00A811BE /* AlchemyDataNewsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421B1DBA5A9D00A811BE /* AlchemyDataNewsV1.framework */; };
+		F8A242311DBA5A9D00A811BE /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421C1DBA5A9D00A811BE /* AlchemyLanguageV1.framework */; };
+		F8A242321DBA5A9D00A811BE /* AlchemyVisionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421D1DBA5A9D00A811BE /* AlchemyVisionV1.framework */; };
+		F8A242331DBA5A9D00A811BE /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421E1DBA5A9D00A811BE /* ConversationV1.framework */; };
+		F8A242341DBA5A9D00A811BE /* ConversationV1Experimental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2421F1DBA5A9D00A811BE /* ConversationV1Experimental.framework */; };
+		F8A242351DBA5A9D00A811BE /* DialogV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242201DBA5A9D00A811BE /* DialogV1.framework */; };
+		F8A242361DBA5A9D00A811BE /* DocumentConversionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242211DBA5A9D00A811BE /* DocumentConversionV1.framework */; };
+		F8A242371DBA5A9D00A811BE /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242221DBA5A9D00A811BE /* Freddy.framework */; };
+		F8A242381DBA5A9D00A811BE /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242231DBA5A9D00A811BE /* LanguageTranslatorV2.framework */; };
+		F8A242391DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242241DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework */; };
+		F8A2423A1DBA5A9D00A811BE /* PersonalityInsightsV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242251DBA5A9D00A811BE /* PersonalityInsightsV2.framework */; };
+		F8A2423B1DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242261DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework */; };
+		F8A2423C1DBA5A9D00A811BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242271DBA5A9D00A811BE /* RestKit.framework */; };
+		F8A2423D1DBA5A9D00A811BE /* RetrieveAndRankV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242281DBA5A9D00A811BE /* RetrieveAndRankV1.framework */; };
+		F8A2423E1DBA5A9D00A811BE /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A242291DBA5A9D00A811BE /* SpeechToTextV1.framework */; };
+		F8A2423F1DBA5A9D00A811BE /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422A1DBA5A9D00A811BE /* Starscream.framework */; };
+		F8A242401DBA5A9D00A811BE /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422B1DBA5A9D00A811BE /* TextToSpeechV1.framework */; };
+		F8A242411DBA5A9D00A811BE /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422C1DBA5A9D00A811BE /* ToneAnalyzerV3.framework */; };
+		F8A242421DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422D1DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework */; };
+		F8A242431DBA5A9D00A811BE /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2422E1DBA5A9D00A811BE /* VisualRecognitionV3.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F8A242441DBA5AB000A811BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F863F3331DBA6F1300D057BA /* AlchemyDataNewsV1.framework in CopyFiles */,
+				F863F3591DBA6F1300D057BA /* VisualRecognitionV3.framework in CopyFiles */,
+				F863F3551DBA6F1300D057BA /* ToneAnalyzerV3.framework in CopyFiles */,
+				F863F33D1DBA6F1300D057BA /* DialogV1.framework in CopyFiles */,
+				F863F3491DBA6F1300D057BA /* RelationshipExtractionV1Beta.framework in CopyFiles */,
+				F863F3311DBA6F1300D057BA /* Alamofire.framework in CopyFiles */,
+				F863F33B1DBA6F1300D057BA /* ConversationV1Experimental.framework in CopyFiles */,
+				F863F3411DBA6F1300D057BA /* Freddy.framework in CopyFiles */,
+				F863F3571DBA6F1300D057BA /* TradeoffAnalyticsV1.framework in CopyFiles */,
+				F863F34D1DBA6F1300D057BA /* RetrieveAndRankV1.framework in CopyFiles */,
+				F863F3511DBA6F1300D057BA /* Starscream.framework in CopyFiles */,
+				F863F3351DBA6F1300D057BA /* AlchemyLanguageV1.framework in CopyFiles */,
+				F863F3371DBA6F1300D057BA /* AlchemyVisionV1.framework in CopyFiles */,
+				F863F3451DBA6F1300D057BA /* NaturalLanguageClassifierV1.framework in CopyFiles */,
+				F863F34B1DBA6F1300D057BA /* RestKit.framework in CopyFiles */,
+				F863F34F1DBA6F1300D057BA /* SpeechToTextV1.framework in CopyFiles */,
+				F863F35B1DBA6F1300D057BA /* Pods_Watson_Cardiology.framework in CopyFiles */,
+				F863F33F1DBA6F1300D057BA /* DocumentConversionV1.framework in CopyFiles */,
+				F863F3431DBA6F1300D057BA /* LanguageTranslatorV2.framework in CopyFiles */,
+				F863F3531DBA6F1300D057BA /* TextToSpeechV1.framework in CopyFiles */,
+				F863F3471DBA6F1300D057BA /* PersonalityInsightsV2.framework in CopyFiles */,
+				F863F3391DBA6F1300D057BA /* ConversationV1.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		145DBDDF57ABDE2A8CD5B70B /* Pods-Watson Cardiology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson Cardiology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watson Cardiology/Pods-Watson Cardiology.debug.xcconfig"; sourceTree = "<group>"; };
+		67AA520957975978F9CAA165 /* Pods_Watson_Cardiology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_Cardiology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDEA1C99EE23EC40208E0E70 /* Pods-Watson Cardiology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson Cardiology.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watson Cardiology/Pods-Watson Cardiology.release.xcconfig"; sourceTree = "<group>"; };
+		F82759D61DBAA60700338A6C /* DepartmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		F82759D71DBAA60700338A6C /* DeparmentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeparmentCollectionViewCell.xib; sourceTree = "<group>"; };
+		F82759E11DBAAF4500338A6C /* ManagementDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManagementDetailViewController.swift; path = "../../Concierge/CognitiveConcierge-iOS/CognitiveConcierge/ManagementDetailViewController.swift"; sourceTree = "<group>"; };
+		F82759E61DBAB01C00338A6C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F82759F81DBAB50E00338A6C /* Management.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Management.swift; sourceTree = "<group>"; };
 		F82B93691DBA4E0A002F0C51 /* Watson Cardiology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watson Cardiology.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82B936C1DBA4E0A002F0C51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F82B936E1DBA4E0A002F0C51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82B936E1DBA4E0A002F0C51 /* DepartmentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentOptionsViewController.swift; sourceTree = "<group>"; };
 		F82B93711DBA4E0A002F0C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F82B93731DBA4E0A002F0C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82B93761DBA4E0A002F0C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F82B93781DBA4E0A002F0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82B937E1DBA4F76002F0C51 /* IBM_Watson_Logo_Animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IBM_Watson_Logo_Animation.gif; sourceTree = "<group>"; };
+		F82B93801DBA5552002F0C51 /* WatsonCardiology.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WatsonCardiology.plist; sourceTree = "<group>"; };
+		F863F3241DBA5BFE00D057BA /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = ../MessagesViewController.swift; sourceTree = "<group>"; };
+		F863F3261DBA61D600D057BA /* MessagesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		F863F3281DBA628800D057BA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F863F32A1DBA659700D057BA /* DecisionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecisionsView.xib; sourceTree = "<group>"; };
+		F863F32B1DBA659700D057BA /* DecisionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecisionsView.swift; sourceTree = "<group>"; };
+		F8A2421A1DBA5A9D00A811BE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F8A2421B1DBA5A9D00A811BE /* AlchemyDataNewsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyDataNewsV1.framework; path = Carthage/Build/iOS/AlchemyDataNewsV1.framework; sourceTree = "<group>"; };
+		F8A2421C1DBA5A9D00A811BE /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = Carthage/Build/iOS/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
+		F8A2421D1DBA5A9D00A811BE /* AlchemyVisionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyVisionV1.framework; path = Carthage/Build/iOS/AlchemyVisionV1.framework; sourceTree = "<group>"; };
+		F8A2421E1DBA5A9D00A811BE /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
+		F8A2421F1DBA5A9D00A811BE /* ConversationV1Experimental.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1Experimental.framework; path = Carthage/Build/iOS/ConversationV1Experimental.framework; sourceTree = "<group>"; };
+		F8A242201DBA5A9D00A811BE /* DialogV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DialogV1.framework; path = Carthage/Build/iOS/DialogV1.framework; sourceTree = "<group>"; };
+		F8A242211DBA5A9D00A811BE /* DocumentConversionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DocumentConversionV1.framework; path = Carthage/Build/iOS/DocumentConversionV1.framework; sourceTree = "<group>"; };
+		F8A242221DBA5A9D00A811BE /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
+		F8A242231DBA5A9D00A811BE /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		F8A242241DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageClassifierV1.framework; path = Carthage/Build/iOS/NaturalLanguageClassifierV1.framework; sourceTree = "<group>"; };
+		F8A242251DBA5A9D00A811BE /* PersonalityInsightsV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV2.framework; path = Carthage/Build/iOS/PersonalityInsightsV2.framework; sourceTree = "<group>"; };
+		F8A242261DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelationshipExtractionV1Beta.framework; path = Carthage/Build/iOS/RelationshipExtractionV1Beta.framework; sourceTree = "<group>"; };
+		F8A242271DBA5A9D00A811BE /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		F8A242281DBA5A9D00A811BE /* RetrieveAndRankV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RetrieveAndRankV1.framework; path = Carthage/Build/iOS/RetrieveAndRankV1.framework; sourceTree = "<group>"; };
+		F8A242291DBA5A9D00A811BE /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		F8A2422A1DBA5A9D00A811BE /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		F8A2422B1DBA5A9D00A811BE /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		F8A2422C1DBA5A9D00A811BE /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		F8A2422D1DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TradeoffAnalyticsV1.framework; path = Carthage/Build/iOS/TradeoffAnalyticsV1.framework; sourceTree = "<group>"; };
+		F8A2422E1DBA5A9D00A811BE /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +177,168 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F863F33C1DBA6F1300D057BA /* DialogV1.framework in Frameworks */,
+				F8A242371DBA5A9D00A811BE /* Freddy.framework in Frameworks */,
+				F863F3301DBA6F1300D057BA /* Alamofire.framework in Frameworks */,
+				F8A242401DBA5A9D00A811BE /* TextToSpeechV1.framework in Frameworks */,
+				F8A242421DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework in Frameworks */,
+				F8A242361DBA5A9D00A811BE /* DocumentConversionV1.framework in Frameworks */,
+				2FB120B6F2868D4AD3F43B2A /* Pods_Watson_Cardiology.framework in Frameworks */,
+				F8A2423D1DBA5A9D00A811BE /* RetrieveAndRankV1.framework in Frameworks */,
+				F8A2423A1DBA5A9D00A811BE /* PersonalityInsightsV2.framework in Frameworks */,
+				F863F3341DBA6F1300D057BA /* AlchemyLanguageV1.framework in Frameworks */,
+				F8A242311DBA5A9D00A811BE /* AlchemyLanguageV1.framework in Frameworks */,
+				F863F3541DBA6F1300D057BA /* ToneAnalyzerV3.framework in Frameworks */,
+				F8A242381DBA5A9D00A811BE /* LanguageTranslatorV2.framework in Frameworks */,
+				F863F33E1DBA6F1300D057BA /* DocumentConversionV1.framework in Frameworks */,
+				F8A242321DBA5A9D00A811BE /* AlchemyVisionV1.framework in Frameworks */,
+				F863F33A1DBA6F1300D057BA /* ConversationV1Experimental.framework in Frameworks */,
+				F8A242301DBA5A9D00A811BE /* AlchemyDataNewsV1.framework in Frameworks */,
+				F863F3421DBA6F1300D057BA /* LanguageTranslatorV2.framework in Frameworks */,
+				F8A242331DBA5A9D00A811BE /* ConversationV1.framework in Frameworks */,
+				F8A2423E1DBA5A9D00A811BE /* SpeechToTextV1.framework in Frameworks */,
+				F8A242391DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				F863F3401DBA6F1300D057BA /* Freddy.framework in Frameworks */,
+				F8A2423B1DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework in Frameworks */,
+				F863F3561DBA6F1300D057BA /* TradeoffAnalyticsV1.framework in Frameworks */,
+				F863F3321DBA6F1300D057BA /* AlchemyDataNewsV1.framework in Frameworks */,
+				F8A2423F1DBA5A9D00A811BE /* Starscream.framework in Frameworks */,
+				F8A2423C1DBA5A9D00A811BE /* RestKit.framework in Frameworks */,
+				F863F3501DBA6F1300D057BA /* Starscream.framework in Frameworks */,
+				F8A242351DBA5A9D00A811BE /* DialogV1.framework in Frameworks */,
+				F863F3361DBA6F1300D057BA /* AlchemyVisionV1.framework in Frameworks */,
+				F863F34C1DBA6F1300D057BA /* RetrieveAndRankV1.framework in Frameworks */,
+				F863F3581DBA6F1300D057BA /* VisualRecognitionV3.framework in Frameworks */,
+				F863F3381DBA6F1300D057BA /* ConversationV1.framework in Frameworks */,
+				F8A242411DBA5A9D00A811BE /* ToneAnalyzerV3.framework in Frameworks */,
+				F863F3441DBA6F1300D057BA /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				F863F3461DBA6F1300D057BA /* PersonalityInsightsV2.framework in Frameworks */,
+				F863F3481DBA6F1300D057BA /* RelationshipExtractionV1Beta.framework in Frameworks */,
+				F863F34E1DBA6F1300D057BA /* SpeechToTextV1.framework in Frameworks */,
+				F863F35A1DBA6F1300D057BA /* Pods_Watson_Cardiology.framework in Frameworks */,
+				F863F3521DBA6F1300D057BA /* TextToSpeechV1.framework in Frameworks */,
+				F8A242341DBA5A9D00A811BE /* ConversationV1Experimental.framework in Frameworks */,
+				F8A2422F1DBA5A9D00A811BE /* Alamofire.framework in Frameworks */,
+				F8A242431DBA5A9D00A811BE /* VisualRecognitionV3.framework in Frameworks */,
+				F863F34A1DBA6F1300D057BA /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA7476AA337157BE03128DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				145DBDDF57ABDE2A8CD5B70B /* Pods-Watson Cardiology.debug.xcconfig */,
+				EDEA1C99EE23EC40208E0E70 /* Pods-Watson Cardiology.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6903AB5A033A15A0356E1E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8A2421A1DBA5A9D00A811BE /* Alamofire.framework */,
+				F8A2421B1DBA5A9D00A811BE /* AlchemyDataNewsV1.framework */,
+				F8A2421C1DBA5A9D00A811BE /* AlchemyLanguageV1.framework */,
+				F8A2421D1DBA5A9D00A811BE /* AlchemyVisionV1.framework */,
+				F8A2421E1DBA5A9D00A811BE /* ConversationV1.framework */,
+				F8A2421F1DBA5A9D00A811BE /* ConversationV1Experimental.framework */,
+				F8A242201DBA5A9D00A811BE /* DialogV1.framework */,
+				F8A242211DBA5A9D00A811BE /* DocumentConversionV1.framework */,
+				F8A242221DBA5A9D00A811BE /* Freddy.framework */,
+				F8A242231DBA5A9D00A811BE /* LanguageTranslatorV2.framework */,
+				F8A242241DBA5A9D00A811BE /* NaturalLanguageClassifierV1.framework */,
+				F8A242251DBA5A9D00A811BE /* PersonalityInsightsV2.framework */,
+				F8A242261DBA5A9D00A811BE /* RelationshipExtractionV1Beta.framework */,
+				F8A242271DBA5A9D00A811BE /* RestKit.framework */,
+				F8A242281DBA5A9D00A811BE /* RetrieveAndRankV1.framework */,
+				F8A242291DBA5A9D00A811BE /* SpeechToTextV1.framework */,
+				F8A2422A1DBA5A9D00A811BE /* Starscream.framework */,
+				F8A2422B1DBA5A9D00A811BE /* TextToSpeechV1.framework */,
+				F8A2422C1DBA5A9D00A811BE /* ToneAnalyzerV3.framework */,
+				F8A2422D1DBA5A9D00A811BE /* TradeoffAnalyticsV1.framework */,
+				F8A2422E1DBA5A9D00A811BE /* VisualRecognitionV3.framework */,
+				67AA520957975978F9CAA165 /* Pods_Watson_Cardiology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F82759DA1DBAA7FA00338A6C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				F863F32A1DBA659700D057BA /* DecisionsView.xib */,
+				F863F32B1DBA659700D057BA /* DecisionsView.swift */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		F82759DB1DBAAA0E00338A6C /* Messages MVC */ = {
+			isa = PBXGroup;
+			children = (
+				F82759DA1DBAA7FA00338A6C /* Subviews */,
+				F863F3241DBA5BFE00D057BA /* MessagesViewController.swift */,
+				F863F3261DBA61D600D057BA /* MessagesViewModel.swift */,
+			);
+			name = "Messages MVC";
+			sourceTree = "<group>";
+		};
+		F82759E81DBAB0E400338A6C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F82759E61DBAB01C00338A6C /* Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F82759E91DBAB10B00338A6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F82B936E1DBA4E0A002F0C51 /* DepartmentOptionsViewController.swift */,
+				F82759E11DBAAF4500338A6C /* ManagementDetailViewController.swift */,
+				F82759DB1DBAAA0E00338A6C /* Messages MVC */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F82759EA1DBAB17500338A6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F82B93731DBA4E0A002F0C51 /* Assets.xcassets */,
+				F82B936C1DBA4E0A002F0C51 /* AppDelegate.swift */,
+				F82B93751DBA4E0A002F0C51 /* LaunchScreen.storyboard */,
+				F82B937E1DBA4F76002F0C51 /* IBM_Watson_Logo_Animation.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F82759EB1DBAB1AF00338A6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F82759D61DBAA60700338A6C /* DepartmentCollectionViewCell.swift */,
+				F82759D71DBAA60700338A6C /* DeparmentCollectionViewCell.xib */,
+				F82B93701DBA4E0A002F0C51 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F82759FA1DBAB52900338A6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F863F3281DBA628800D057BA /* User.swift */,
+				F82759F81DBAB50E00338A6C /* Management.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F82B93601DBA4E0A002F0C51 = {
 			isa = PBXGroup;
 			children = (
 				F82B936B1DBA4E0A002F0C51 /* Watson Cardiology */,
 				F82B936A1DBA4E0A002F0C51 /* Products */,
+				CA7476AA337157BE03128DAB /* Pods */,
+				F6903AB5A033A15A0356E1E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +353,13 @@
 		F82B936B1DBA4E0A002F0C51 /* Watson Cardiology */ = {
 			isa = PBXGroup;
 			children = (
-				F82B936C1DBA4E0A002F0C51 /* AppDelegate.swift */,
-				F82B936E1DBA4E0A002F0C51 /* ViewController.swift */,
-				F82B93701DBA4E0A002F0C51 /* Main.storyboard */,
-				F82B93731DBA4E0A002F0C51 /* Assets.xcassets */,
-				F82B93751DBA4E0A002F0C51 /* LaunchScreen.storyboard */,
+				F82759E91DBAB10B00338A6C /* Controllers */,
+				F82759E81DBAB0E400338A6C /* Utils */,
+				F82759FA1DBAB52900338A6C /* Models */,
+				F82759EB1DBAB1AF00338A6C /* Views */,
+				F82759EA1DBAB17500338A6C /* Resources */,
 				F82B93781DBA4E0A002F0C51 /* Info.plist */,
+				F82B93801DBA5552002F0C51 /* WatsonCardiology.plist */,
 			);
 			path = "Watson Cardiology";
 			sourceTree = "<group>";
@@ -71,9 +371,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82B937B1DBA4E0A002F0C51 /* Build configuration list for PBXNativeTarget "Watson Cardiology" */;
 			buildPhases = (
+				268C2445EE0F17EA214A2565 /* [CP] Check Pods Manifest.lock */,
 				F82B93651DBA4E0A002F0C51 /* Sources */,
 				F82B93661DBA4E0A002F0C51 /* Frameworks */,
 				F82B93671DBA4E0A002F0C51 /* Resources */,
+				30FF683F163504BB1AEF23EA /* [CP] Embed Pods Frameworks */,
+				A048CA11EBA7D6567C9F11C1 /* [CP] Copy Pods Resources */,
+				F8A242441DBA5AB000A811BE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -97,6 +401,7 @@
 					F82B93681DBA4E0A002F0C51 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = XSB6YPP53Z;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,19 +431,79 @@
 			files = (
 				F82B93771DBA4E0A002F0C51 /* LaunchScreen.storyboard in Resources */,
 				F82B93741DBA4E0A002F0C51 /* Assets.xcassets in Resources */,
+				F863F32C1DBA659700D057BA /* DecisionsView.xib in Resources */,
+				F82B93811DBA5552002F0C51 /* WatsonCardiology.plist in Resources */,
+				F82759D91DBAA60700338A6C /* DeparmentCollectionViewCell.xib in Resources */,
 				F82B93721DBA4E0A002F0C51 /* Main.storyboard in Resources */,
+				F82B937F1DBA4F76002F0C51 /* IBM_Watson_Logo_Animation.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		268C2445EE0F17EA214A2565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30FF683F163504BB1AEF23EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watson Cardiology/Pods-Watson Cardiology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A048CA11EBA7D6567C9F11C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watson Cardiology/Pods-Watson Cardiology-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F82B93651DBA4E0A002F0C51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82B936F1DBA4E0A002F0C51 /* ViewController.swift in Sources */,
+				F863F32D1DBA659700D057BA /* DecisionsView.swift in Sources */,
+				F82759E51DBAAF4500338A6C /* ManagementDetailViewController.swift in Sources */,
+				F82B936F1DBA4E0A002F0C51 /* DepartmentOptionsViewController.swift in Sources */,
 				F82B936D1DBA4E0A002F0C51 /* AppDelegate.swift in Sources */,
+				F863F3271DBA61D600D057BA /* MessagesViewModel.swift in Sources */,
+				F82759E71DBAB01C00338A6C /* Utils.swift in Sources */,
+				F82759F91DBAB50E00338A6C /* Management.swift in Sources */,
+				F82759D81DBAA60700338A6C /* DepartmentCollectionViewCell.swift in Sources */,
+				F863F3291DBA628800D057BA /* User.swift in Sources */,
+				F863F3251DBA5BFE00D057BA /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +532,7 @@
 		F82B93791DBA4E0A002F0C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -182,6 +548,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -210,12 +577,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		F82B937A1DBA4E0A002F0C51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -231,6 +600,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -251,33 +621,48 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F82B937C1DBA4E0A002F0C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 145DBDDF57ABDE2A8CD5B70B /* Pods-Watson Cardiology.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XSB6YPP53Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = "Watson Cardiology/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saurabhsikka.Watson-Cardiology";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		F82B937D1DBA4E0A002F0C51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEA1C99EE23EC40208E0E70 /* Pods-Watson Cardiology.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XSB6YPP53Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = "Watson Cardiology/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saurabhsikka.Watson-Cardiology";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -300,6 +685,7 @@
 				F82B937D1DBA4E0A002F0C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
